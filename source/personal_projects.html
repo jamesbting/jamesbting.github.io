@@ -7,84 +7,102 @@
     <link  rel = 'stylesheet' href = 'style.css'>
     <title>James Ting - Education</title>
 </head>
+
+<!--Navigation Bar-->
+<div class="topnav">
+  <a href="../index.html">About Me</a>
+  <a href="education.html">Education</a>
+  <a class = "active" href="personal_projects.html">Projects</a>
+  <a href="skills.html">Skills</a>
+  <a href="extra.html">Extra-curriculars</a>
+  <a href="../assets/CV - James Ting.pdf">Resume</a>
+
+  <!--Contact me on the right-->
+  <div class ="topnav-right">
+    <a href="https://github.com/melonslicer"><i class="fab fa-github fa-lg"></i></a>
+    <a href="https://www.linkedin.com/in/james-b-ting/"><i class="fab fa-linkedin-in fa-lg"></i></a>
+    <a href="mailto: tingjamesb@gmail.com"><i class="fas fa-envelope fa-lg"></i></i></a>
+  </div>
+
+</div>
+
 <body>
     <div class = 'box'>
         <i class="fas fa-laptop-code fa-5x"></i>
-        <h3>Personal Projects</h3>
-          
-        <!--Sudoku game box-->
-        <h2>Sudoku Game</h2>
-        <h4>December 2019 - Present</h4>
-        <p>
-          I created a Sudoku game in Python, which includes a GUI, automatic solver, 
-          stopwatch and a game generator.
-          <br>
-          <br>
-          The GUI and the stopwatch were built using the Tkinter module. The solver employed a recursive
-          backtracking algorithm to test possible solutions to the board, and then eliminate those that would
-          not lead to a valid solution.
-          <br>
-          <ul>
-            <li><a href="https://github.com/melonslicer/Sudoku-Solver"><i class="fab fa-github fa-sm"></i></a> </li>
-          </ul>
-        </p>
+        <h1>Personal Projects</h1>
+        
+        <hr>
 
-          <!-- My website box-->
-          <h2>My Website</h2>
+
+      <!-- My website box-->
+      <a href="https://melonslicer.github.io/">
+        <div class = 'project-box'>
+          <h2>My Website <i class="fas fa-globe"></i></h2>
+          <h3>Web Design, Front-End Development</h3>
           <h4>December 2019 - Present</h4>
           <p>
-            I built a website to learn my HTML and CSS skills and to showcase my resume in another manner. The website is actually the one you are reading right now. 
-            <br>
-            <br>
-            This website was built to be an online resume, and hosted on Amazon Web Services. In the future, I hope to host it on my Raspberry Pi 4, which would give me experience in both front-end and back-end
-            development. 
-            <br>
-            <br>
-            <ul>
-              <li><a href="#"><i class="fab fa-github fa-sm"></i></a> </li>
-            </ul>
+            I built a website to learn my <b>HTML</b> and <b>CSS</b> skills and to showcase my resume in another manner. 
+            The website is actually the one you are reading right now. 
           </p>
+          <p>
+            This website was built to be an online resume, and is currently being hosted on GitHub. 
+            In the future, I hope to host it on my Raspberry Pi 4, which would give me experience in both front-end and back-end
+            development. In designing this website, I learned about responsive design, and how design can be used to guide and influence
+            how users interact with software.
+          </p>
+        </div>
+      </a>
 
-          <!--Login System box--> 
-        <h2>Login System</h2>
-        <h4>November 2019 - Present</h4>
-        <p>
-          I created a login system in Python, which includes a GUI, a database to store all the usernames, and lets users create accounts, change passwords, and login.
-          <br>
-          <br>
-          This project was my first personal project I had ever created. I had planned it to be a simple program that let me practice file IO and OOD in Python, but would not include a GUI and the user was
-          expected to interact with the console.
-          <br>
-          <br>
-          Upon learning about cryptographic hash functions, I had wanted to apply that to the login system, and be done with it. In the end, I added a GUI (built using Tkinter) a SHA-256 encryption algorithm,
-          and a database to store all the account information. 
-          <br>
-          <ul>
-            <li><a href="https://github.com/melonslicer/my-login-system"><i class="fab fa-github fa-sm"></i></a> </li>
-          </ul>
-        </p>
+       <!--Sudoku game box-->
+       <a href="https://github.com/melonslicer/Sudoku-Solver">
+        <div class = 'project-box'>
+           <h2>Sudoku Game <i class="fas fa-chess-board"></i></h2>
+           <h3>Backtracking Algorithms, GUIs</h3>
+           <h4>December 2019 - February 2020</h4>
+           <p>
+             I created a Sudoku game in <b>Python</b>, which includes a GUI, automatic solver, 
+             stopwatch and a game generator.
+           </p>
+           <p>
+             The GUI and the stopwatch were built using the Tkinter module. The solver employed a <b>recursive backtracking algorithm</b>
+             to test possible solutions to the board, and then eliminate those that would
+             not lead to a valid solution. This project helped me learn about more types of algorithms beyond those 
+             that are typically covered in the classroom, but are nevertheless useful tools.
+           </p>
+         </div>
+       </a> 
+
+      <!--Login System box-->
+      <a href="https://github.com/melonslicer/my-login-system">
+        <div class = 'project-box'>
+          <h2>Login System <i class="fas fa-user-lock"></i></h2>
+          <h3>Cybersecurity, Databases, GUIs</h3>
+          <h4>November 2019 - January 2020</h4>
+            <p>
+            I created a login system in <b>Python</b>, which includes a GUI, a database to store all the usernames, 
+            and lets users create accounts, change passwords, and login.
+            </p>
+            <p>
+            This project was my first personal project I had ever created. I had planned it to be a simple program that 
+            let me practice <b>file IO and OOD</b> in Python, but would not include a GUI and the user was expected to 
+            interact with the console.
+            </p>
+            <p>
+            Upon learning about cryptographic hash functions, I had wanted to apply that to the login system,
+            and be done with it. In the end, I added a GUI (built using <b>Tkinter</b>) a <b>SHA-256 encryption</b> algorithm,
+            and a <b>SQLite3</b> database to store all the account information. 
+            </p>
+          </div>
+        </a> 
+
       </div>  
-
-      <div class = 'box'>
-        <!--Back to homepage box-->
-        <h3>Go back to the main menu</h3>
-        <ul>
-          <li><a href=../index.html><i class="fas fa-home"></i></a></li>
-        </ul>
-      </div>
       
-      <div class = 'box'>
-        <!--Contact me box-->
-        <h3>Contact me:</h3>
-        <ul>
-          <li><a href="https://github.com/melonslicer"><i class="fab fa-github fa-sm"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/james-b-ting/"><i class="fab fa-linkedin-in fa-sm"></i></a></li>
-          <li><a href="mailto: tingjamesb@gmail.com"><i class="fas fa-envelope fa-sm"></i></i></a></li>
-        </ul>
-        <h7>
-          <!-- credits for the background image and the icons-->
-          Icons are provided by <a href="https://fontawesome.com">fontawesome.com</a> and the background image is courtesy of <a href="https://unsplash.com">unsplash.com</a>.
-        </h7>
+      <div class = 'credit-box'>
+        <p>
+        This website was created by James Ting. © James Ting 2020. 
+        <!-- credits for the icons-->
+        Icons are provided by <a href="https://fontawesome.com">fontawesome.com</a>.
+        </p>
     </div>
 </body>
 </html>
