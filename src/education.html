@@ -1,70 +1,93 @@
 <!DOCTYPE html>
-<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/d4da57a6f5.js" crossorigin="anonymous"></script>
     <link  rel = 'stylesheet' href = 'style.css'>
-    <title>Education</title>
+    <script src = 'scripts.js'></script>
+    <title>James Ting - Education</title>
 </head>
 
  <!--Navigation Bar-->
  <div class="navbar">
- <div class="topnav">
-  <button class="dropbtn"><i class="fas fa-bars"></i></button>
-  <div class="topnav-content">
-    <a href="../index.html">A Quick Summary</a>
-    <a class = "active" href="education.html">Education</a>
-    <a href="personal_projects.html">Projects</a>
-    <a href="skills.html">Skills</a>
-    <a href="extra.html">Extra-Curriculars</a>
-    <a href="../assets/CV - James Ting.pdf">Resume</a>
-  </div> 
+  <div class="topnav">
+    <button class="dropbtn"><i class="fas fa-bars"></i></button>
+    <div class="topnav-content">
+      <a href="../index.html">A Quick Summary</a>
+      <a class = "active" href="education.html">Education</a>
+      <a href="personal_projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="extra.html">Extra-Curriculars</a>
+      <a href="../assets/CV - James Ting.pdf">Resume</a>
+    </div> 
+  </div>
 </div>
-</div>
-
-
 <!-- actual website content-->
 <body>
-    <div class = 'box'>
-        <i class="fas fa-graduation-cap fa-5x"></i>
-            <div class = "inner-box">
-            <h1>Education</h3>
-            <h2>McGill University - Montreal, Canada</h2>
-            <h3>Bachelor's of Science - Computer Science</h4>
-            <ul>
-              <li>cGPA: 3.85/4.00</li>
-              <li>Year: Third Year</li>
-              <li>Expected Graduation Date: April 2022</li>
-            </ul>
-          </div>
+  <div class = "static-section">
+    <i class="fas fa-graduation-cap fa-5x"></i>
+    <br>
+    <h1blue>Education</h1blue>
+  </div>
 
-        <hr>
-        
-        <!--<img src = "../assets/mcgill-logo.png" class = box-mcgill-img></img>-->
-        <div class = "inner-box">
-          <h3>
-            Some of the courses I've taken:
-          </h3>
-          <ul>
-            <courses-li><a href="https://www.mcgill.ca/study/2020-2021/courses/math-222">MATH 222: Calculus 3</a></courses-li>
-            <courses-li><a href="https://www.mcgill.ca/study/2020-2021/courses/phys-257">PHYS 257: Experimental Methods</a></courses-li>
-            <courses-li><a href="https://www.mcgill.ca/study/2020-2021/courses/math-223">MATH 223: Linear Algebra</a></courses-li>
-            <courses-li><a href="https://www.mcgill.ca/study/2020-2021/courses/math-323">MATH 323: Probability</a></courses-li>
-            <courses-li><a href="https://www.mcgill.ca/study/2020-2021/courses/math-240">MATH 240: Discrete Structures</a></courses-li>
-            <courses-li><a href="https://www.mcgill.ca/study/2020-2021/courses/comp-206">COMP 206: Software Systems</a></courses-li>
-            <courses-li><a href="https://www.mcgill.ca/study/2020-2021/courses/comp-303">COMP 303: Software Design</a></courses-li>
-          </ul>
-        </div>
+  <section>
+    <div class = "content">
+      <hr>
+      <script type="text/javascript">
+        ScrollOut({
+            targets: 'h2,p'
+        })
+      </script>
     </div>
+  </section>
+  
+  <section>
+    <div class = "content">
+      <h2>McGill University - Montreal, Canada</h2>
+      <br>
+      <h3>Bachelor's of Science - Computer Science</h3>
+      <ul>
+        <li>cGPA: 3.85/4.00</li>
+        <li>Year: Third Year</li>
+        <li>Expected Graduation Date: April 2022</li>
+      </ul>
+      <script type="text/javascript">
+        ScrollOut({
+            targets: 'h2,h3,ul,li'
+        })
+      </script>
+    </div>
+  </section>
+
+  <!--KNOWN BUG: CHANGING THE LIST INTO LINKS TO THE COURSE WEBSITES CAUSES THEM TO DISAPPEAR-->
+  <section>
+  <div class = "content">
+    <h3>Some of the courses I've taken:</h3>
+    <br>
+    <ul>
+      <li>MATH 222: Calculus 3</li>
+      <li>PHYS 257: Experimental Methods</li>
+      <li>MATH 223: Linear Algebra</li>
+      <li>MATH 323: Probability</li>
+      <li>MATH 240: Discrete Structures</li>
+      <li>COMP 206: Software Systems</li>
+      <li>COMP 303: Software Design</li>
+    </ul>
+    <script type="text/javascript">
+      ScrollOut({
+          targets: 'h3,ul,li'
+      })
+    </script>
+  </div>
+</section>
 
     <!--contact me box-->
     <div class="contact-box">
       <p>Contact me:</p>
-      <a href="https://github.com/jamesbting"><i class="fab fa-github fa-5x"></i></a>
-      <a href="https://www.linkedin.com/in/james-b-ting/"><i class="fab fa-linkedin-in fa-5x"></i></a>
-      <a href="mailto: tingjamesb@gmail.com"><i class="fas fa-envelope fa-5x"></i></i></a>
+      <a href="https://github.com/jamesbting"><i class="fab fa-github fa-3x"></i></a>
+      <a href="https://www.linkedin.com/in/james-b-ting/"><i class="fab fa-linkedin-in fa-3x"></i></a>
+      <a href="mailto: tingjamesb@gmail.com"><i class="fas fa-envelope fa-3x"></i></i></a>
     </div>
 
     <!--credit box-->

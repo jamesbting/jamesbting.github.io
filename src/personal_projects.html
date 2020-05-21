@@ -5,109 +5,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/d4da57a6f5.js" crossorigin="anonymous"></script>
+    <script src = 'scripts.js'></script>
     <link  rel = 'stylesheet' href = 'style.css'>
-    <title>James Ting - Education</title>
+    <title>James Ting - Personal Projects</title>
 </head>
-
  <!--Navigation Bar-->
  <div class="navbar">
- <div class="topnav">
-  <button class="dropbtn"><i class="fas fa-bars"></i></button>
-  <div class="topnav-content">
-    <a href="../index.html">A Quick Summary</a>
-    <a href="education.html">Education</a>
-    <a class = "active" href="personal_projects.html">Projects</a>
-    <a href="skills.html">Skills</a>
-    <a href="extra.html">Extra-curriculars</a>
-    <a href="../assets/CV - James Ting.pdf">Resume</a>
-  </div> 
-</div>
+  <div class="topnav">
+    <button class="dropbtn"><i class="fas fa-bars"></i></button>
+    <div class="topnav-content">
+      <a href="../index.html">A Quick Summary</a>
+      <a href="education.html">Education</a>
+      <a class = "active" href="personal_projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="extra.html">Extra-curriculars</a>
+      <a href="../assets/CV - James Ting.pdf">Resume</a>
+    </div> 
+  </div>
 </div>
 
 <body>
-    <div class = 'box'>
-        <i class="fas fa-laptop-code fa-5x"></i>
-        <h1>Personal Projects</h1>
-        
-        <hr>
+  <div class = "static-section">
+    <i class="fas fa-laptop-code fa-5x"></i>
+    <br>
+    <h1blue>Personal Projects</h1blue>
+  </div>
 
-       <!-- LoL Predictor box-->
-       <a href="https://github.com/jamesbting/LoL-Predictor">
-        <div class = 'information-box'>
-          <h2>League of Legends Match Outcome prediction with Deep Learning<i class="fas fa-globe"></i></h2>
-          <h3>Deep Learning, PyTorch, Riot API</h3>
-          <h4>May 2020 - Present</h4>
-          <p>
-            I built a Binary Classification Neural Network using the PyTorch library, and trained it to predict the outcomes
-            of League of Legends games, based on each participant's stats. I achieved approximately 92% validation accuracy,
-            on a dataset of approximately 3403 matches.
-          </p>
-          <p>
-            The dataset was created by me using Riot's API and the RiotWatcher wrapper library. The script that collects the data
-            starts with a match, then, for a random summoner in that match, pulls the past match history and then collects the data of that match,
-            and continues the process recursively
-          </p>
-        </div>
-      </a>
+  <section>
+    <div class = "content">
+      <hr>
+      <script type="text/javascript">
+        ScrollOut({
+            targets: 'h2,p'
+        })
+      </script>
+    </div>
+  </section>
 
-      <!-- My website box-->
-      <a href="https://jamesbting.github.io/">
-        <div class = 'information-box'>
-          <h2>My Website <i class="fas fa-globe"></i></h2>
-          <h3>Web Design, Front-End Development</h3>
-          <h4>December 2019 - Present</h4>
-          <p>
-            I built a website to learn my <b>HTML</b> and <b>CSS</b> skills and to showcase my resume in another manner. 
-            The website is actually the one you are reading right now. 
-          </p>
-          <p>
-            I am in the process of refactoring the web page to make it compatible with mobile and tablet devices. If you have the chance, feel free to
-            have a look on your phone
-          </p>
-        </div>
-      </a>
+   <!-- LoL Predictor box-->
+  <section>
+    <div class = "content">
+      <h2>League of Legends Match Outcome prediction with Deep Learning</h2>
+      <br>
+      <h3>Deep Learning, PyTorch, Riot API</h3>
+      <br>
+      <h4>May 2020 - Present</h4>
+      <p>
+      I built a <b>Binary Classification Neural Network</b> using the <b>PyTorch library</b>, and trained it to predict the outcomes
+      of League of Legends games, based on each participant's stats. I achieved approximately <b>92% validation accuracy</b>,
+      on a dataset of approximately 4759 matches.
+      </p>
+      <p>
+      The dataset was created by me using <b>Riot's API</b> and the <b>RiotWatcher wrapper library</b>. The script that collects the data
+      starts with a match, then, for a random summoner in that match, pulls the past match history and then collects the data of that match,
+      and continues the process recursively.
+      </p>
+      <a href="https://github.com/jamesbting/LoL-Predictor" title='Click to find out more about this personal project'>Read More</a>
+      <script type="text/javascript">
+        ScrollOut({
+            targets: 'h2,h3,h4,p,a'
+        })
+      </script>
+    </div>
+  </section>
 
-       <!--Sudoku game box-->
-       <a href="https://github.com/jamesbting/Sudoku-Solver">
-        <div class = 'information-box'>
-           <h2>Sudoku Game <i class="fas fa-chess-board"></i></h2>
-           <h3>Backtracking Algorithms, GUIs</h3>
-           <h4>December 2019</h4>
-           <p>
-             I created a Sudoku game in <b>Python</b>, which includes a GUI, automatic solver, 
-             stopwatch and a game generator.
-           </p>
-           <p>
-             The GUI and the stopwatch were built using the Tkinter module. The solver employed a <b>recursive backtracking algorithm</b>
-             to test possible solutions to the board, and then eliminate those that would
-             not lead to a valid solution. This project helped me learn about more types of algorithms beyond those 
-             that are typically covered in the classroom, but are nevertheless useful tools.
-           </p>
-         </div>
-       </a> 
 
-      <!--Login System box-->
-      <a href="https://github.com/jamesbting/my-login-system">
-        <div class = 'information-box'>
-          <h2>Login System <i class="fas fa-user-lock"></i></h2>
-          <h3>Cybersecurity, Databases, GUIs</h3>
-          <h4>November 2019 - January 2020</h4>
-            <p>
-            I created a login system in <b>Python</b>, which includes a GUI, a database to store all the usernames, 
-            and lets users create accounts, change passwords, and login.
-            </p>
-            <p>
-            This project was my first personal project I had ever created. I had planned it to be a simple program that 
-            let me practice <b>file IO and OOD</b> in Python, but would not include a GUI and the user was expected to 
-            interact with the console.
-            </p>
-            <p>
-            Upon learning about cryptographic hash functions, I had wanted to apply that to the login system,
-            and be done with it. In the end, I added a GUI (built using <b>Tkinter</b>) a <b>SHA-256 encryption</b> algorithm,
-            and a <b>SQLite3</b> database to store all the account information. 
-            </p>
-          </div>
-        </a> 
+  <!-- My website box-->
+  <section>
+    <div class = "content">
+      <h2>My Personal Website</h2>
+      <br>
+      <h3>Web Design, Front-End Development</h3>
+      <br>
+      <h4>December 2019 - Present</h4>
+      <p>
+        I built a website to learn my <b>HTML</b> and <b>CSS</b> skills and to showcase my resume in another manner. 
+        The website is actually the one you are reading right now. 
+      </p>
+      <p>
+        I am in the process of refactoring the web page to make it compatible with mobile and tablet devices. If you have the chance, feel free to
+        have a look on your phone or tablet.
+      </p>
+      <a href="https://github.com/jamesbting/jamesbting.github.io" title='Click to find out more about this personal project'>Read More</a>
+      <script type="text/javascript">
+        ScrollOut({
+            targets: 'h2,h3,h4,p,a'
+        })
+      </script>
+    </div>
+  </section>
+
+   <!--Sudoku game box-->
+  <section>
+    <div class = "content">
+      <h2>Sudoku Game</h2>
+      <br>
+      <h3>Backtracking Algorithms, GUIs</h3>
+      <br>
+      <h4>December 2019</h4>
+      <p>
+        I created a Sudoku game in <b>Python</b>, which includes a GUI, automatic solver, 
+        stopwatch and a game generator.
+      </p>
+      <p>
+        The GUI and the stopwatch were built using the Tkinter module. The solver employed a <b>recursive backtracking algorithm</b>
+        to test possible solutions to the board, and then eliminate those that would
+        not lead to a valid solution. This project helped me learn about more types of algorithms beyond those 
+        that are typically covered in the classroom, but are nevertheless useful tools.
+      </p>
+      <a href="https://github.com/jamesbting/Sudoku-Solver" title='Click to find out more about this personal project'>Read More</a>
+      <script type="text/javascript">
+        ScrollOut({
+            targets: 'h2,h3,h4,p,a'
+        })
+      </script>
+    </div>
+  </section>
+
+   <!--Login System box-->
+  <section>
+    <div class = "content">
+      <h2>Login System</h2>
+      <br>
+      <h3>Cybersecurity, Databases, GUIs</h3>
+      <br>
+      <h4>November 2019 - January 2020</h4>
+        <p>
+        I created a login system in <b>Python</b>, which includes a GUI, a database to store all the usernames, 
+        and lets users create accounts, change passwords, and login.
+        </p>
+        <p>
+        This project was my first personal project I had ever created. I had planned it to be a simple program that 
+        let me practice <b>file IO</b> and <b>OOD</b> in Python, but would not include a GUI and the user was expected to 
+        interact with the console.
+        </p>
+        <p>
+        Upon learning about cryptographic hash functions, I had wanted to apply that to the login system,
+        and be done with it. In the end, I added a GUI (built using <b>Tkinter</b>) a <b>SHA-256 encryption</b> algorithm,
+        and a <b>SQLite3</b> database to store all the account information. 
+        </p>
+        <a href="https://github.com/jamesbting/my-login-system" title='Click to find out more about this personal project'>Read More</a>
+        <script type="text/javascript">
+          ScrollOut({
+              targets: 'h2,h3,h4,p,a'
+          })
+        </script>
+    </div>
+  </section>
 
       </div>  
     <!--contact me box-->
