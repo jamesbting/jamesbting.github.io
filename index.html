@@ -1,102 +1,131 @@
 <!DOCTYPE html>
-<!doctype html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/d4da57a6f5.js" crossorigin="anonymous"></script>
-    <script src = 'src\scripts.js'></script>
-    <link  rel = 'stylesheet' href = 'src\style.css'>
-    <title>James Ting</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - James Ting</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
 </head>
-  <body>
-     <div class="sidenav">
-        <!-- <img src = 'assets/profile.png ' alt = 'Profile picture not found' class='profile-img' width='70%' height = '29%'> -->
-        <a href="index.html">A Quick Summary</a>
-        <a href="src/education.html">Education</a>
-        <a href="src/personal_projects.html">Personal Projects</a>
-        <a href="src/experience.html">Experience</a>
-        <a href="src/skills.html">Skills</a>
-        <a href="src/extra.html">Extra-curriculars</a>
-        <a href="assets/CV - James Ting.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-        <!-- <div class="contact-box"> -->
-      
-        <div class="contact-box">
-          <p>Contact me:</p>
-          <a href="https://github.com/jamesbting"  title="My Github" target="_blank" rel="noopener noreferrer"><i
-                class="fab fa-github fa-1x"></i></a>
-          <a href="https://www.linkedin.com/in/james-b-ting/" title="My LinkedIn"target="_blank" rel="noopener noreferrer"><i
-                class="fab fa-linkedin-in fa-1x"></i></a>
-          <a href="mailto: tingjamesb@gmail.com" title="Email me" target="_blank" rel="noopener noreferrer"><i
-                class="fas fa-envelope fa-1x"></i></i></a>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
+        <div class="container"><a class="navbar-brand logo" href="#">James Ting</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects-grid-cards.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="CV - James Ting.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
-
-    <div class = "static-section">
-      <br>
-      <h1blue>James Ting</h1blue>
-    </div>
-        
-    <section>
-      <div class = "content">
-        <h2>Who am I?</h2>
-        <p>I am a Computer Science student at McGill University in Montreal, Canada. While growing up in Vancouver, I have always had a passion for technology
-          and software. From jailbreaking iPhones and flashing custom software onto Android phones, to training neural networks, I am always looking
-          for opportunities to learn more about software, and I look forward to seeing what the future brings.
-        </p>
-        <script type="text/javascript">
-          ScrollOut({
-              targets: 'h2,p'
-          })
-        </script>
-      </div>
+    </nav>
+    <main class="page lanidng-page">
+        <section class="portfolio-block block-intro">
+            <div class="container">
+                <div class="about-me">
+                    <p data-aos="fade" data-aos-once="true">Hello! I am <strong>James Ting</strong>. I am a third-year Computer Science student at McGill University.&nbsp;<br><br>From building websites with Bootstrap Studio to training neural networks, I am always looking for opportunities
+                        to learn more about software, and I look forward to seeing what the future brings.<br></p>
+                    <div class="row no-gutters">
+                        <div class="col-md-6 col-lg-4 item zoom-on-hover"><img class="img-fluid image" src="assets/img/cities/yvr.jpg"></div>
+                        <div class="col-md-6 col-lg-4 item zoom-on-hover"><img class="img-fluid image" src="assets/img/cities/hkg.jpg"></div>
+                        <div class="col-md-6 col-lg-4 item zoom-on-hover"><img class="img-fluid image" src="assets/img/cities/yul.jpg"></div>
+                    </div>
+                    <p data-aos="fade" data-aos-once="true"><br>As a Vancouver native, I learned French in school, English out of school, and Cantonese at home, becoming fluent in all three. My multicultural heritage makes me feel equally at home in the cramped streets of Hong Kong and the
+                        top of Mont-Royal and gives me a unique cultural perspective on life<br></p>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio-block photography"></section>
+        <section class="portfolio-block call-to-action border-bottom">
+            <div class="container">
+                <div class="d-flex justify-content-center align-items-center content">
+                    <h3>Like what you see?</h3><button class="btn btn-outline-primary btn-lg" type="button"><a>Hire Me</a></button></div>
+            </div>
+        </section>
+        <section class="portfolio-block skills">
+            <div class="container">
+                <div class="heading">
+                    <h2>Skills</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card special-skill-item border-0">
+                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-star-outline"></i></div>
+                            <div class="card-body">
+                                <h3 class="card-title">Languages</h3>
+                                <p class="card-text">&nbsp;One of my own principles is that there is always something to learn. During the course of my education and my personal projects, I have learned multiple languages both in and outside of the classroom. I have built
+                                    experience working with <strong>Java</strong>,&nbsp;<strong>Python</strong>,&nbsp;<strong>JavaScript, CSS, HTML, Bash, </strong>and&nbsp;<strong>C</strong>.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card special-skill-item border-0">
+                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-lightbulb-outline"></i></div>
+                            <div class="card-body">
+                                <h3 class="card-title">Technologies</h3>
+                                <p class="text-center card-text">Using modern technologies is a critical part of the modern software development cycle. Through my formal education and personal projects, I have leveraged various technologies to speed up development and build modular,
+                                    maintainable code bases. Some of the libraries/technologies that I have worked with <strong>TensorFlow/Keras</strong>, <strong>PyTorch</strong>, <strong>JUnit</strong>, <strong>ReactJS</strong>,<strong>&nbsp;NodeJS </strong>and
+                                    various&nbsp;<strong>REST APIs</strong>.&nbsp;<br></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card special-skill-item border-0">
+                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-gear-outline"></i></div>
+                            <div class="card-body">
+                                <h3 class="card-title">Hobbies</h3>
+                                <p class="card-text"><br>One of my hobbies is aviation! I hold a valid&nbsp;<strong>Private Pilot License, with Night and Multi-Engine endorsements</strong>. With over 100 hours in the air on aircraft ranging from a tiny single-engine Cessna
+                                    152, to a six-seater twin-engine Piper Seneca, a frequent pass time of mine is to fly somewhere for lunch, and be home in time for dinner (when the weather cooperates).<br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="portfolio-block website gradient">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-12 col-lg-5 offset-lg-1 text">
+                    <h3>Personal Projects</h3>
+                    <p>Due to the rapid pace of technology, I find that my formal education, while critical in developing fundamentals, lacks the flexibility to adapt to new and upcoming technologies. Therefore, I supplement my learning with personal projects
+                        that give me wider breadth of knowledge and experience.&nbsp;&nbsp;<br><br>I encourage you to check out my personal projects to see what I have learned!</p>
+                </div>
+                <div class="col-md-12 col-lg-5">
+                    <div class="portfolio-laptop-mockup">
+                        <div class="screen">
+                            <div class="screen-content" style="background-image:url(&quot;tech/image6.png&quot;);"><a href="#"><img class="img-fluid" src="assets/img/demonstrations/Pathfinding-Algorithm-Visualizer-Demonstration.gif"></a></div>
+                        </div>
+                        <div class="keyboard"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    
-    <section>
-      <div class = "content">
+    <footer class="page-footer">
+        <div class="container">
+            <div class="links"><a href="#">Home</a><a href="cv.html#eductation">Education</a><a href="cv.html#experience">Experience</a><a href="projects-grid-cards.html">Projects</a><a href="contact.html">Contact me</a><a href="#">CV</a></div>
+            <div class="social-icons"><a href="https://www.linkedin.com/in/james-b-ting/" target="_blank"><i class="icon ion-social-linkedin"></i></a><a href="https://github.com/jamesbting" target="_blank"><i class="icon ion-social-github"></i></a><a href="mailto:tingjamesb@gmail.com"><i class="icon ion-android-mail"></i></a></div>
+            <div>
+                <p>Created by James Ting with Bootstrap Studio.&nbsp;© James Ting 2020.<br></p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
 
-        <h2>What languages and technologies have I worked with?</h2>
-
-        <p>
-        I have experience working with Java, Python, C, Javascript, HTML and CSS across multiple environments including Windows and Linux (Ubuntu and Raspbian OS).
-        In terms of libraries, I have worked with TensorFlow, PyTorch, MatPlotLib, SQLite, JUnit,React, and NodeJS. 
-        </p>
-        <p>
-        I have also worked with multiple APIs, including wrnchAI's real-time human motion tracking API, as well as Riot Games' player and match data API.  
-        </p>
-        <script type="text/javascript">
-          ScrollOut({
-              targets: 'h2,p'
-          })
-        </script>
-      </div>
-    </section>
-
-
-    <section>
-      <div class = "content">
-        <h2>What do I do in your free time?</h2>
-    
-        <p>When I am not studying or coding, I am exploring Montreal to discover new and interesting foods to eat, 
-        or soaring high in the sky in a Cessna 172.</p>
-
-        <script type="text/javascript">
-          ScrollOut({
-              targets: 'h2,p'
-          })
-        </script>
-      </div>
-    </section>
-                
-    <!--contact me box-->
-   
-    <div class='credit-box'>
-      <p>
-        This website was created by James Ting. © James Ting 2020.
-        <!-- credits for the icons-->
-        Icons are provided by <a href="https://fontawesome.com" target="_blank"
-          rel="noopener noreferrer">fontawesome.com</a>.
-      </p>
-      </div>
-    </body>
 </html>
